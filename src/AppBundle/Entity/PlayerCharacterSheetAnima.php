@@ -236,6 +236,11 @@ class PlayerCharacterSheetAnima
     private $inventory;
 
     /**
+     * @ORM\ManyToOne(targetEntity="Games", mappedBy="playerCharacterSheetAnima")
+     */
+    private $games;
+
+    /**
      * Get id.
      *
      * @return int

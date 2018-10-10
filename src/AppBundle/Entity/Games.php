@@ -33,6 +33,37 @@ class Games
      */
     private $players;
 
+    /**
+     * @ORM\OneToMany(targetEntity="NpcCharacterSheetAnima")
+     */
+    private $npcCharacterSheetAnima;
+
+    /**
+     * @ORM\OneToMany(targetEntity="PlayerCharacterSheetAnima")
+     */
+    private $playerCharacterSheetAnima;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="scenarioName", type="string", length=255)
+     */
+    private $name;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="maps", type="string", length=255)
+     */
+    private $maps;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="backgroundMusic", type="string", length=255)
+     */
+    private $backgroundMusic;
+
 
     /**
      * Get id.
