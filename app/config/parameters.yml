@@ -2,11 +2,11 @@
 parameters:
     database_host: 127.0.0.1
     database_port: null
-    database_name: symfony
+    database_name: symfony_Minion
     database_user: root
-    database_password: null
+    database_password: SohenSokatsui1992
     mailer_transport: smtp
     mailer_host: 127.0.0.1
-    mailer_user: null
-    mailer_password: null
+    mailer_user: xenitag0@gmail.com
+    mailer_password: 'yes'
     secret: fefc31c113b42c8cc5a0c2acb31423f4f0dc2682
