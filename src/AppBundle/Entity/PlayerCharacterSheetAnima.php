@@ -236,7 +236,7 @@ class PlayerCharacterSheetAnima
     private $inventory;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Games", mappedBy="playerCharacterSheetAnima")
+     * @ORM\ManyToOne(targetEntity="Games", inversedBy="playerCharacterSheetAnima")
      */
     private $games;
 
@@ -992,5 +992,29 @@ class PlayerCharacterSheetAnima
     public function getInventory()
     {
         return $this->inventory;
+    }
+
+    /**
+     * Set games.
+     *
+     * @param \AppBundle\Entity\Games|null $games
+     *
+     * @return PlayerCharacterSheetAnima
+     */
+    public function setGames(\AppBundle\Entity\Games $games = null)
+    {
+        $this->games = $games;
+
+        return $this;
+    }
+
+    /**
+     * Get games.
+     *
+     * @return \AppBundle\Entity\Games|null
+     */
+    public function getGames()
+    {
+        return $this->games;
     }
 }
